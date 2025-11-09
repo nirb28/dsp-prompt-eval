@@ -1,0 +1,15 @@
+{
+  "name": "dsp-prompt-eval",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n server,ui -c green,cyan \"npm --prefix server run dev\" \"npm --prefix ui run dev\"",
+    "install:all": "npm --prefix server install && npm --prefix ui install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "promptfoo": "^0.119.4"
+  }
+}
